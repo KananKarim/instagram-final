@@ -13,7 +13,7 @@ const Header = () => {
                 <Link to="/" className="logo">
                     <h1 className="navbar-brand text-uppercase p-0 m-0"
                     onClick={() => window.scrollTo({top: 0})}>
-                        <img height={60} width={60} src='./logo.jpg'></img>
+                        <img height={60} width={60} src='./instagram.png' alt = "instagram"></img>
                     </h1>
                 </Link>
 

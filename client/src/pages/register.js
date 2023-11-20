@@ -76,8 +76,7 @@ const Register = () => {
       <div className='main_auth_page'>
       <div className="auth_page">
             <form onSubmit={handleSubmit}>
-                <h3 className="text-uppercase text-center mb-4">JobPoint</h3>
-
+            <img width={350} height={100} src = "./logo2016.png" alt = "word"></img>
                 <div className="form-group">
                     <label htmlFor="fullname">{t('fullname')}</label>
                     <input type="text" className="form-control" id="fullname" name="fullname"
@@ -177,7 +176,7 @@ const Register = () => {
                 </p>
             </form>
         </div>
-        <img width={500} height={500} src='./logo4.png'></img>
+        <img style = {{marginTop: "140px"}}width={300} height={450} src='./phones.jpg' alt = "phones"></img>
       </div>
         <Footer/>
        </>

@@ -53,9 +53,8 @@ const Navbar = () => {
   return (
   <>
     <div className='nav-header'>
-   <div className='left'>
-   <img width={150} height={150} src='./logo.jpg'></img>
-   <p>JobPoint</p>
+   <div className='left' style={{ marginTop: '20px' }}>
+   <img width={70} height={70} src='./instagram.png' alt = "instgaram"></img>
    </div>
    <div className='right'>
     <p onClick={toAbout}>{t('about')}</p>

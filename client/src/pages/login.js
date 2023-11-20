@@ -70,8 +70,7 @@ const Login = () => {
        <div style={{display: 'flex', justifyContent: 'space-between'}} className='general_auth_page'>
        <div className="auth_page">
             <form style={{height: '400px'}} onSubmit={handleSubmit}>
-                <h3 className="text-uppercase text-center mb-4">JobPoint</h3>
-
+                    <img width={350} height={100} src = "./logo2016.png" alt = "word"></img>
                 <div className="form-group">
                     <label htmlFor="exampleInputEmail1">{t('email')}</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" name="email"
@@ -108,7 +107,7 @@ const Login = () => {
                 </p>
             </form>
         </div>
-        <img width={500} height={500} src='./logo4.png'></img>
+        <img width={400} height={400} src='./bio.jpg' alt = "phones"></img>
        </div>
         <Footer/>
         </>
