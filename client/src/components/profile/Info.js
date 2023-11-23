@@ -41,7 +41,7 @@ const Info = ({id, auth, profile, dispatch}) => {
 
                         <div className="info_content">
                             <div className="info_content_title">
-                                <h2>{user.username}</h2>
+                                <h2 style={{color:"blue",fontWeight:"bolder"}}>@{user.username}</h2>
                                 {
                                     user._id === auth.user._id
                                     ?  <button className="btn btn-outline-info"
@@ -64,22 +64,13 @@ const Info = ({id, auth, profile, dispatch}) => {
                                 </span>
                             </div>
 
-                            <h1>{user.fullname}</h1>
-                            <p>{user.title}</p>
-                            <h3>Info</h3>
+                            <h4>{user.fullname}</h4>
+                            <h2>Contact</h2>
                          <span className="text-danger">{user.mobile}</span>
                           <h6 className="m-0">{user.email}</h6>
                          <p className="m-0">{user.address}</p>
-                            <a href={user.website} target="_blank" rel="noreferrer">
-                                {user.website}
-                            </a>
-                            <h2>About</h2>
-                            <p>{user.story}</p>
-                            <h2>Education</h2>
-                            <p>{user.story}</p>
-                            <h2>License</h2>
-                            <p>{user.story}</p>
-                           
+                            <h2>Bio</h2>
+                            <p>{user.story}</p>           
                         </div>
 
                         {

@@ -11,11 +11,8 @@ function PrivateFooter() {
     <>
       <div className="footer">
         <div className="footer_info-first">
-          <div className="logo">
-           
-          </div>
           <p className="text">
-            JobPoint is a global sharing platform that you can create posts and view other users posts: <br />
+            Instagram is a global sharing platform that you can create posts and view other users posts: <br />
             We are Connecting you with Digital life.
           </p>
         </div>
@@ -24,18 +21,6 @@ function PrivateFooter() {
 <ul>
   <li onClick={() => history.push('/message')}>Messenger</li>
   <li onClick={() => history.push('/discover')}>Discovery</li>
-</ul>
-        </div>
-        <div className="footer_info-third">
-        <h3>JobPoint</h3>
-<ul>
-  <li>About Us</li>
-  <li>Press</li>
-  <li>Contact Us</li>
-  <li>Help Center</li>
-  <li>How it Works</li>
-  <li>Privacy</li>
-  <li>Terms</li>
 </ul>
         </div>
         <div className="footer_info-forth">
@@ -47,7 +32,9 @@ function PrivateFooter() {
           </span>
         </div>
       </div>
-      <div className="copyright"></div>
+      <div className="copyright">
+      © 2023 Instagram
+      </div>
       
     </>
   );

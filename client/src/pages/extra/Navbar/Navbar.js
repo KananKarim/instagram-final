@@ -30,16 +30,6 @@ i18n.use(initReactI18next).init({
 
 const Navbar = () => {
   let history = useHistory()
-
-  function toAbout() {
-    history.push('/about')
-  }
-  function toHowItWorks() {
-    history.push('/howitwork')
-  }
-  function toContact() {
-    history.push('/contact')
-  }
   function toRegister() {
     history.push('/register')
   }
@@ -57,9 +47,6 @@ const Navbar = () => {
    <img width={70} height={70} src='./instagram.png' alt = "instgaram"></img>
    </div>
    <div className='right'>
-    <p onClick={toAbout}>{t('about')}</p>
-    <p onClick={toHowItWorks}>{t('jobs')}</p>
-    <p onClick={toContact}>{t('contact')}</p>
     <p onClick={toRegister}>{t('register')}</p>
      <Select
             options={languageOptions}

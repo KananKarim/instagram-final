@@ -17,6 +17,7 @@ class APIfeatures {
     }
 }
 
+
 const postCtrl = {
     createPost: async (req, res) => {
         try {

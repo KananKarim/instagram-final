@@ -6,10 +6,10 @@ import { updateProfileUser } from '../../redux/actions/profileAction'
 
 const EditProfile = ({setOnEdit}) => {
     const initState = {
-        fullname: '', mobile: '', address: '', website: '', story: '', gender: '', title: ''
+        fullname: '', mobile: '', address: '', story: '', gender: '',
     }
     const [userData, setUserData] = useState(initState)
-    const { fullname, mobile, address, website, story, gender, title } = userData
+    const { fullname, mobile, address, story, gender} = userData
 
     const [avatar, setAvatar] = useState('')
 
@@ -72,11 +72,6 @@ const EditProfile = ({setOnEdit}) => {
                         </small>
                     </div>
                 </div>
-                <div className="form-group">
-                    <label htmlFor="title">Title</label>
-                    <input type="text" name="title" value={title}
-                    className="form-control" onChange={handleInput} />
-                </div>
 
                 <div className="form-group">
                     <label htmlFor="mobile">Mobile</label>
@@ -91,21 +86,13 @@ const EditProfile = ({setOnEdit}) => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="website">Website</label>
-                    <input type="text" name="website" value={website}
+                    <label htmlFor="story">Bio</label>
+                    <textarea name="story" value={story} cols="40" rows="4"
                     className="form-control" onChange={handleInput} />
-                </div>
-
-                <div className="form-group">
-                    <label htmlFor="story">Story</label>
-                    <textarea name="story" value={story} cols="30" rows="4"
-                    className="form-control" onChange={handleInput} />
-
                     <small className="text-danger d-block text-right">
                         {story.length}/200
                     </small>
                 </div>
-
                 <label htmlFor="gender">Gender</label>
                 <div className="input-group-prepend px-0 mb-4">
                     <select name="gender" id="gender" value={gender}

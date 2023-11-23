@@ -26,7 +26,6 @@ i18n.use(initReactI18next).init({
   interpolation: { escapeValue: false }
 });
 
-
 function Footer() {
 
   let history = useHistory()
@@ -37,8 +36,6 @@ function Footer() {
       i18n.changeLanguage(selectedLanguage.value);
     };
 
-
- 
   return (
     <>
       <div className="footer">
@@ -47,31 +44,8 @@ function Footer() {
            
           </div>
           <p className="text">
-          {t('JobPoint')}
+          {t('Instagram')}
           </p>
-        </div>
-        <div className="footer_info-second">
-<h3>  {t('Company')}</h3>
-<ul>
-  <li  onClick={() => history.push('/contactinformation')}> {t('Contact Information')}</li>
-  <li  onClick={() => history.push('/frequentlyasked')}> {t('Frequently Asked')}</li>
-  <li  onClick={() => history.push('/termsofuse')}> {t('Terms Of Use')}</li>
-  <li  onClick={() => history.push('/about')}> {t('About us')}</li>
-  <li  onClick={() => history.push('/sources')}> {t('Sources')}</li>
-  <li  onClick={() => history.push('/helpandsupport')}> {t('Help And Support')}</li>
-</ul>
-        </div>
-        <div className="footer_info-third">
-        <h3>JobPoint</h3>
-<ul>
-  <li  onClick={() => history.push('/vacancies')}> {t('Vacancies')}</li>
-  <li onClick={() => history.push('/press')}> {t('Press')}</li>
-  <li  onClick={() => history.push('/contact')}> {t('Contact us')}</li>
-  <li  onClick={() => history.push('/helpcenter')}> {t('Help Center')}</li>
-  <li  onClick={() => history.push('/howitwork')}> {t('jobs')}</li>
-  <li  onClick={() => history.push('/privacy')}> {t('Privacy')}</li>
-  <li  onClick={() => history.push('/collaborations')}> {t('Collaborations and Partnerships')}</li>
-</ul>
         </div>
         <div className="footer_info-forth">
           <h3> {t('Stay in the loop')}</h3>
@@ -82,7 +56,9 @@ function Footer() {
           </span>
         </div>
       </div>
-      <div className="copyright"></div>
+      <div className="copyright">
+      © 2023 Instagram
+      </div>
     </>
   );
 }

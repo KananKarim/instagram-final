@@ -73,6 +73,8 @@ html {
   width: 36rem;
   height: 6rem;
   padding-right: 4rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
 }
 .footer_info-forth .button input::-moz-placeholder {
   font-size: 1rem;
@@ -101,7 +103,9 @@ html {
 li {
   cursor: pointer;
 }
-
+.copyright{
+  font-size: 1.5rem;
+}
 @media screen and (min-width: 1400px) {
   .footer {
     font-size: 1.7rem;
