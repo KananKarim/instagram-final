@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://jobpoint.com'
+export const BASE_URL = 'https://instagram.com'
