@@ -169,6 +169,15 @@ const RightSide = () => {
         socket.emit('callUser', msg)
     }
 
+    const handleAudioCall = () => {
+        caller({video: false})
+        callUser({video: false})
+    }
+    
+    const handleVideoCall = () => {
+        caller({video: true})
+        callUser({video: true})
+    }
 
     return (
         <>
@@ -177,6 +186,11 @@ const RightSide = () => {
                     user.length !== 0 &&
                     <UserCard user={user}>
                         <div>
+                            <i className="fas fa-phone-alt"
+                            onClick={handleAudioCall} />
+
+                            <i className="fas fa-video mx-3"
+                            onClick={handleVideoCall} />
 
                             <i className="fas fa-trash text-danger"
                             onClick={handleDeleteConversation} />

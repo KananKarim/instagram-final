@@ -23,6 +23,7 @@ import SocketClient from './SocketClient'
 
 import { getNotifies } from './redux/actions/notifyAction'
 import CallModal from './components/message/CallModal'
+import Peer from 'peerjs'
 
 function App() {
   const { auth, status, modal, call } = useSelector(state => state)
@@ -57,7 +58,13 @@ function App() {
     }
   },[])
 
- 
+  useEffect(() => {
+    const newPeer = new Peer(undefined, {
+      path: '/', secure: true
+    })
+    
+    dispatch({ type: GLOBALTYPES.PEER, payload: newPeer })
+  },[dispatch])
 
 
   return (

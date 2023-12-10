@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #EEF3F8;
+    background: rgba(181, 181, 255, 0.31);
     margin-top: 0;
 }
 .message_header input{

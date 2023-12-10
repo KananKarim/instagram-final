@@ -4,7 +4,7 @@ Welcome to the Instagram Clone project! Immerse yourself in a social experience 
 
 ## TEAM
 
-- IMANOVA TUNZALE
+- IMANOVA TUNZALA
 - KARIMLI KANAN
 
 ## Features
