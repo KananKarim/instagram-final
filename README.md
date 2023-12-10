@@ -81,7 +81,7 @@ Dive into the "Suggested for You" section, where algorithmic magic unveils poten
 
 ## DEPLOYMENT
 
-**_Experience the magic of the Instagram Clone 👉🏻_** https://insta-4c9v.onrender.com
+**_Experience the magic of the Instagram Clone 👉🏻_** https://instaggram.onrender.com
 
 ## Technologies Used
 
